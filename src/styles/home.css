@@ -1,0 +1,6 @@
+.nome{
+  width: 100%;
+  height: 150px;
+  background: rgb(255,128,19);
+  background: linear-gradient(90deg, rgba(255,128,19,1) 0%, rgba(255,180,115,1) 30%);
+}
