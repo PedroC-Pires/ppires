@@ -1,0 +1,22 @@
+/* MAIN STYLING */
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* END MAIN STYLING */
+
+
+/* SECTION STYLING */
+section{
+    width: 60vw;
+    border-radius: 25px;
+    background: var(--bgcolor);
+    box-shadow:  20px 20px 60px var(--shadow1),
+                -20px -20px 60px var(--shadow2);
+    margin-bottom: 2rem;
+    padding: 3rem;
+    transition: 200ms;
+}
+/* END SECTION STYLING STYLING */

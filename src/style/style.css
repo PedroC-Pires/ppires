@@ -1,0 +1,40 @@
+/* IMPORTS */
+@import url(./header.css);
+@import url(./main.css);
+@import url(./container.css);
+@import url(./footer.css);
+@import url(./body.css);
+@import url(./dropdown.css);
+/* END IMPORTS */
+
+
+/* VARIABLES */
+:root {
+    --shadow1:   #bebebe46;
+    --shadow2:   #ffffff46;
+    --bgcolor:   #ccccccd0;
+    --darkblue:  #4577a0;
+    --lightblue: #AFC1D0;
+
+    --white:     #ffffff;
+    --black:     #000000;
+
+    --humanas:   #ff9900;
+    --linguagens:#ff0000;
+    --matematica:#6e6cff;
+    --natureza:  #00ca0a;
+    --tecnico:   #00a2ff;
+    --ppe:       #fffb00;
+}
+/* END VARIABLES */
+
+
+/* ALL ELEMENT STYLING */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* END ALL ELEMENT STYLING */
+
+body{
+    background-image: url("../img/background/bg_nighttime.png");
+}

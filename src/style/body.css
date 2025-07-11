@@ -1,0 +1,11 @@
+/* BODY STYLING */
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    animation: ease-in-out;
+    transition: 1000ms;
+}
+/* END BODY STYLING */

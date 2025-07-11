@@ -1,0 +1,80 @@
+/* CONTAINER CLASS STYLING */
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 200px;
+    flex: 1 0 calc(100% / 2 - 12px);
+    text-align: center;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+section a:link{
+    color: var(--darkblue);
+}
+
+section a:visited{
+    color: var(--darkblue);
+}
+/* END CONTAINER CLASS STYLING */
+
+
+/* TABLE STYLING */
+table{
+    max-width: 100%;
+}
+
+th{
+    background-color: var(--darkblue);
+    color: var(--white);
+    border-radius: 12px;
+    width: calc((60vw - 6rem) / 6);
+}
+th, td{
+    font-size: 1rem;
+    padding: 0.8vw;
+    text-align: center;
+}
+
+td{
+    color: var(--black);
+    background-color: var(--lightblue);
+    border-radius: 12px;
+}
+/* END TABLE STYLING */
+
+
+/* PREVIEW STYLING */
+.preview{
+    width: 40%;
+    border-radius: 12px;
+    animation: ease-in-out;
+    transition: 700ms;
+    margin: auto;
+    cursor: pointer;
+}
+
+.preview:hover{
+    width: 80%;
+    border-radius: calc(12px * 1.4);
+}
+/* END CV STYLING */
+
+section p, section h1, section h3{
+    color: var(--black);
+}
+
+.preview{
+    margin: auto;
+    max-width: 100%;
+    width: 50%;
+    height: fit-content;
+    border-radius: 12px;
+}

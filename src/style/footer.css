@@ -1,0 +1,58 @@
+/* FOOTER STYLING */
+footer{
+    width: 60vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    min-height: 50px;
+    border-radius: 25px;
+    background: var(--bgcolor);
+    box-shadow:  20px 20px 60px var(--shadow1),
+                -20px -20px 60px var(--shadow2);
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    flex-wrap: nowrap;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer div div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 0 150px;
+    min-width: 150px;
+}
+
+footer div div p{
+    margin-top: 0;
+}
+
+footer div div a:link{
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+footer div div a:visited{
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+footer h1{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+footer h3{
+    color: var(--black);
+}
+/* END FOOTER STYLING */

@@ -1,0 +1,41 @@
+/* HEADER STYLING */
+header{
+    width: 60vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 25px;
+    background: var(--bgcolor);
+    box-shadow:  20px 20px 60px var(--shadow1),
+                -20px -20px 60px var(--shadow2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: 200ms;
+}
+
+header button, .dropdown-content a{
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: var(--black);
+    animation: ease-in-out;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+header button:hover, .dropdown-content a:hover{
+    letter-spacing: 2px;
+    color: var(--black);
+    font-weight: 700;
+}
+
+#themeIcon{
+    cursor: pointer;
+}
+/* END HEADER STYLING */
