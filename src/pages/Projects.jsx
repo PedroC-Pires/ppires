@@ -4,7 +4,7 @@ import '../style/style_alt.css';
 import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 
-const Home = () => {
+const Projects = () => {
   const [lightTheme, setLightTheme] = useState(() => {
     const stored = sessionStorage.getItem('lightTheme');
     return stored === null ? true : stored === 'true';
@@ -63,22 +63,29 @@ const Home = () => {
       <Header lightTheme={lightTheme} themeSwitch={themeSwitch} />
       <main>
         <section>
-          <h1 style={{ textAlign: 'center', fontSize: '2rem' }}><span style={{ fontSize: '2.55rem' }}>Portfolio</span><br />Pedro Pires</h1>
-          <h1>About me</h1>
-          <p>I'm Pedro Pires (currently 19 years old) — a UI-focused front-end developer with fullstack capabilities.</p>
-          <p>I started coding at 11, and today I specialize in building modern, responsive interfaces with React, while also handling back-end tasks when needed using Node.js.</p>
-          <p>Currently open to freelance work. Let's build something great.</p>
-          <h1>Skills and profile highlights</h1>
+          <h1 style={{ textAlign: 'center', fontSize: '2rem' }}>My Projects</h1>
+          <p>Here are some of the projects I've worked on:</p>
+          
+          <h2>Portfolio Website</h2>
+          <p>This portfolio website built with React and Vite. Features include:</p>
           <ul>
-            <li>UI-focused front-end developer</li>
-            <li>Fullstack-capable</li>
-            <li>Technical degree in Software Development</li>
-            <li>Currently studying Systems Analysis and Development</li>
-            <li>Clean code enthusiast</li>
-            <li>Problem solver</li>
-            <li>React & Node.js developer</li>
-            <li>Good eye for design</li>
-            <li>Available for freelance projects</li>
+            <li>Dark/Light theme switching</li>
+            <li>Responsive design</li>
+            <li>Netlify deployment</li>
+            <li>Modern UI with glassmorphism effects</li>
+          </ul>
+
+          <h2>More Projects Coming Soon</h2>
+          <p>I'm currently working on several new projects that will be added here soon.</p>
+          
+          <h2>Technologies I Use</h2>
+          <ul>
+            <li>React & React Router</li>
+            <li>Node.js & Express</li>
+            <li>JavaScript & TypeScript</li>
+            <li>HTML5 & CSS3</li>
+            <li>Git & GitHub</li>
+            <li>Vite & Webpack</li>
           </ul>
         </section>
       </main>
@@ -111,4 +118,4 @@ const Home = () => {
   );
 };
 
-export default Home; 
+export default Projects; 
