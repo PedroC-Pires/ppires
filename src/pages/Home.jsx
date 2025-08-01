@@ -27,9 +27,10 @@ const Home = () => {
     // Theme switching logic
     sessionStorage.setItem('lightTheme', lightTheme);
     // Dynamically update background image
+    const baseUrl = import.meta.env.BASE_URL || '/';
     document.body.style.backgroundImage = lightTheme
-      ? 'url("/img/background/bg_nighttime.png")'
-      : 'url("/img/background/bg_daytime.png")';
+      ? `url("${baseUrl}img/background/bg_nighttime.png")`
+      : `url("${baseUrl}img/background/bg_daytime.png")`;
     // Dynamically update CSS variables on :root
     const root = document.documentElement;
     if (lightTheme) {
@@ -60,31 +61,31 @@ const Home = () => {
   return (
     <div className="centered-content">
       <header>
-        <button onClick={() => window.location.href = '/'}>Home</button>
+        <button onClick={() => window.location.href = import.meta.env.BASE_URL || '/'}>Home</button>
         <div className="dropdown">
           <button className="dropbtn">Áreas do Conhecimento</button>
           <div className="dropdown-content">
-            <a href="/">Humanas</a>
-            <a href="/">Linguagens</a>
-            <a href="/">Matemática</a>
-            <a href="/">Natureza</a>
+            <a href={import.meta.env.BASE_URL || '/'}>Humanas</a>
+            <a href={import.meta.env.BASE_URL || '/'}>Linguagens</a>
+            <a href={import.meta.env.BASE_URL || '/'}>Matemática</a>
+            <a href={import.meta.env.BASE_URL || '/'}>Natureza</a>
           </div>
         </div>
         <div className="dropdown">
           <button className="dropbtn">Técnico</button>
           <div className="dropdown-content">
-            <a href="/banco-de-dados">Banco de Dados</a>
-            <a href="/desenvolvimento-de-sistemas">Desenvolvimento de Sistemas</a>
-            <a href="/implantacao-de-sistemas">Implantação e Manutenção de Sistemas</a>
-            <a href="/modelagem-de-sistemas">Modelagem de Sistemas</a>
-            <a href="/programacao-de-aplicativos">Programação de aplicativos</a>
-            <a href="/sa">S.A.</a>
-            <a href="/teste-de-sistemas">Teste de Sistemas</a>
+            <a href={`${import.meta.env.BASE_URL || '/'}banco-de-dados`}>Banco de Dados</a>
+            <a href={`${import.meta.env.BASE_URL || '/'}desenvolvimento-de-sistemas`}>Desenvolvimento de Sistemas</a>
+            <a href={`${import.meta.env.BASE_URL || '/'}implantacao-de-sistemas`}>Implantação e Manutenção de Sistemas</a>
+            <a href={`${import.meta.env.BASE_URL || '/'}modelagem-de-sistemas`}>Modelagem de Sistemas</a>
+            <a href={`${import.meta.env.BASE_URL || '/'}programacao-de-aplicativos`}>Programação de aplicativos</a>
+            <a href={`${import.meta.env.BASE_URL || '/'}sa`}>S.A.</a>
+            <a href={`${import.meta.env.BASE_URL || '/'}teste-de-sistemas`}>Teste de Sistemas</a>
           </div>
         </div>
-        <button onClick={() => window.location.href = '/ppe'}>PPE</button>
+        <button onClick={() => window.location.href = `${import.meta.env.BASE_URL || '/'}ppe`}>PPE</button>
         <img
-          src={lightTheme ? '/img/moonicon.png' : '/img/sunicon.png'}
+          src={lightTheme ? `${import.meta.env.BASE_URL || '/'}img/moonicon.png` : `${import.meta.env.BASE_URL || '/'}img/sunicon.png`}
           width="24px"
           id="themeIcon"
           alt="Theme Icon"
