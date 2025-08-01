@@ -64,10 +64,10 @@ const Home = () => {
         <div className="dropdown">
           <button className="dropbtn">Áreas do Conhecimento</button>
           <div className="dropdown-content">
-            <a href="/humanas">Humanas</a>
-            <a href="/linguagens">Linguagens</a>
-            <a href="/matematica">Matemática</a>
-            <a href="/natureza">Natureza</a>
+            <a href="/">Humanas</a>
+            <a href="/">Linguagens</a>
+            <a href="/">Matemática</a>
+            <a href="/">Natureza</a>
           </div>
         </div>
         <div className="dropdown">
@@ -95,72 +95,26 @@ const Home = () => {
       <main>
         <section>
           <h1 style={{ textAlign: 'center', fontSize: '2rem' }}><span style={{ fontSize: '2.55rem' }}>Portfolio</span><br />Pedro Pires</h1>
-          <h1>Sobre mim</h1>
-          <p>Meu nome é Pedro Pires, tenho 18 anos, atualmente sou estudante do ensino médio, e estou cursando o curso técnico integrado de desenvolvimento de sistemas da Escola SESI - Florianópolis.</p>
-          <p>Gosto de desenvolver editar vídeos, escutar músicas e jogar, tenho conhecimentos de desenvolvimento tanto Front-end quanto Back-end (tenho preferência pelo Front-end), também tenho conhecimentos de pacote Adobe (Photoshop, Illustrator e Premiere Pro), e também pacote office (Word, Excel, Powerpoint e Access)</p>
-          <h1>Cronograma</h1>
-          <div style={{ overflowX: 'auto', width: '100%' }}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Horário</th>
-                  <th>Segunda</th>
-                  <th>Terça</th>
-                  <th>Quarta</th>
-                  <th>Quinta</th>
-                  <th>Sexta</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>7:35 - 12:50</td>
-                  <td>Aula</td>
-                  <td>Aula</td>
-                  <td>Aula</td>
-                  <td>Aula</td>
-                  <td>Aula</td>
-                </tr>
-                <tr>
-                  <td>12:50 - 17:00</td>
-                  <td>Finalizar atividades e descançar</td>
-                  <td>Finalizar atividades e descançar</td>
-                  <td>Finalizar atividades e descançar</td>
-                  <td>Voleibol</td>
-                  <td>Finalizar atividades e descançar</td>
-                </tr>
-                <tr>
-                  <td>17:00 - 20:00</td>
-                  <td>Tempo livre</td>
-                  <td>Tempo livre</td>
-                  <td>Tempo livre</td>
-                  <td>Tempo livre</td>
-                  <td>Tempo livre</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <h1>Currículo</h1>
-          <img onDoubleClick={() => window.open('/pdf/CV Pedro Pires.pdf','_blank')} src="/img/CV Pedro Pires.png" alt="Curriculum Vitae de Pedro Pires" className="preview" />
-        </section>
-        <section>
-          <h1>Portfolios passados</h1>
-          <p>Aqui estão os portfolios realizados por mim nos anos passados (2022 e 2023), ambos foram feitos no Google Sites.</p>
-          <div className="container">
-            <div>
-              <a href="https://sites.google.com/estudante.sesisenai.org.br/portfolio2022pedropires?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <h2>Portfolio 2022</h2>
-              </a>
-            </div>
-            <div>
-              <a href="https://sites.google.com/estudante.sesisenai.org.br/portfoliopcp/in%C3%ADcio?authuser=0" target="_blank" rel="noopener noreferrer">
-                <h2>Portfolio 2023</h2>
-              </a>
-            </div>
-          </div>
+          <h1>About me</h1>
+          <p>I'm Pedro Pires (currently 19 years old) — a UI-focused front-end developer with fullstack capabilities.</p>
+          <p>I started coding at 11, and today I specialize in building modern, responsive interfaces with React, while also handling back-end tasks when needed using Node.js.</p>
+          <p>Currently open to freelance work. Let's build something great.</p>
+          <h1>Skills and profile highlights</h1>
+          <ul>
+            <li>UI-focused front-end developer</li>
+            <li>Fullstack-capable</li>
+            <li>Technical degree in Software Development</li>
+            <li>Currently studying Systems Analysis and Development</li>
+            <li>Clean code enthusiast</li>
+            <li>Problem solver</li>
+            <li>React & Node.js developer</li>
+            <li>Good eye for design</li>
+            <li>Available for freelance projects</li>
+          </ul>
         </section>
       </main>
       <footer>
-        <h1>Contato e redes</h1>
+        <h1>Contact me</h1>
         <div>
           <div>
             <h3>Whatsapp</h3>
