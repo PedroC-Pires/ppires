@@ -67,7 +67,7 @@ td{
 }
 /* END CV STYLING */
 
-section p, section h1, section h3{
+section p, section h1, section h3, section ul, section li{
     color: var(--black);
 }
 
