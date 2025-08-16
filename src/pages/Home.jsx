@@ -3,6 +3,7 @@ import '../style/style.css';
 import '../style/style_alt.css';
 import { useEffect, useState } from 'react';
 import Header from '../components/Header';
+import CV from '../assets/CV-1.png';
 
 const Home = () => {
   const [lightTheme, setLightTheme] = useState(() => {
@@ -80,6 +81,10 @@ const Home = () => {
             <li>Good eye for design</li>
             <li>Available for freelance projects</li>
           </ul>
+          <h1>Curriculum Vitae</h1>
+          <a href="https://pedroc-pires.github.io/CV/" target="_blank" rel="noopener noreferrer">
+            <img src={CV} alt="Curriculum Vitae" className='preview'/>
+          </a>
         </section>
       </main>
       <footer>
