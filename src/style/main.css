@@ -18,5 +18,19 @@ section{
     margin-bottom: 2rem;
     padding: 3rem;
     transition: 200ms;
+    color: var(--black);
+}
+
+section h1,
+section h2,
+section h3,
+section p,
+section li,
+section a {
+    color: var(--black);
+}
+
+section a:hover {
+    color: var(--darkblue);
 }
 /* END SECTION STYLING STYLING */
